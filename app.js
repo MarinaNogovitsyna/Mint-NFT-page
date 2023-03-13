@@ -1,16 +1,19 @@
-var leftBtn = document.querySelector('#left');
-var rightBtn = document.querySelector('#right');
 
-leftBtn.addEventListener('click', slide);
-rightBtn.addEventListener('click', slide);
 
-function slide(e) {
-  e.target.id === 'left' ? scroll(-200) : scroll(200);
+
+
+const slides = document.querySelectorAll('.slide')
+
+for (const slide of slides) {
+    slide.addEventListener('click', () => {
+        clearActiveClasses()
+
+        slide.classList.add('active')
+    })
 }
 
-function scroll(val) {
-  document.querySelector('ul').scrollBy({ 
-    left: val,
-    behavior: 'smooth' 
-  });
+function clearActiveClasses() {
+    slides.forEach((slide) => {
+        slide.classList.remove('active')
+    })
 }
