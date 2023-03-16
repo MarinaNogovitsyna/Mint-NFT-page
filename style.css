@@ -163,15 +163,15 @@ a {
 }
 
 .one{
-    margin-left: 400px;
+    margin-left: 20%;
 }
 
 .three{
-    margin-left: 400px;
+    margin-left: 20%;
 }
 
 .two{
-    margin-right: 400px;
+    margin-right: 40%;
 }
 
 .roadMap h1{
@@ -304,6 +304,23 @@ details > p{
     
 }
 
-
-
-
+@media(max-width: 600px){
+    .header{
+        height: 7%;
+        
+    }
+    .header_item{
+        font-size: 10px;
+    }
+    .name h1{
+        font-size: 50px;
+    }
+    .name p{
+        font-size: 15px;
+    }
+    .btn{
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+   
+}
