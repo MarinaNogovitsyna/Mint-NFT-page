@@ -8,6 +8,7 @@
 body {
     font-family: Poppins, sans-serif ;
     margin: 0;
+    background: #b6bfe0;
 }
 
 a {
@@ -58,8 +59,6 @@ a {
 }
 
 .name{
-  background: url(https://images.unsplash.com/photo-1552312097-8ef75595e2a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=754&q=80);    
-  background-size: cover;
   padding-top: 10%;
   padding-bottom: 10%;
   
@@ -88,7 +87,7 @@ a {
     padding: 30px;
     border-radius: 20px;
     font-size: 20px;
-    background: linear-gradient(229.99deg, #b2cfeb -26%, #ccba9f 145%);
+    background: linear-gradient(229.99deg, #9ca2d6 -26%, #cfbb8a 145%);
 
 }
 
@@ -101,69 +100,26 @@ a {
     margin-right: 30px;
 }
 
-
-  
-  .collection {
-    height: 70vh;
-    display: flex;
-    align-items:center;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-  }
-  
-  .img {
-    width: 100%;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 60px 1fr 60px;
-    grid-template-rows: 200px;
-    
-  }
-  
-  .img ul {
-    width: 100%;
-    display: grid;
-    grid-gap: 12rem;
-    grid-template-columns: repeat(10, 100px);
-    list-style: none;
-    overflow:hidden;
-    border-radius: 10px;
-    scroll-snap-type: x mandatory;
-   
-  }
-  
-  .img li{
-    /* background: url(https://images.unsplash.com/photo-1532153259564-a5f24f261f51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80); */
-    scroll-snap-align: center;
-    
-  }
-
-
-  
-  .collection button {
-    background-color: #283847;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #left {
-    clip-path: polygon(100% 0, 0 50%, 100% 100%);
-    height: 80px;
-    width: 60px;
-    margin-top: 50px;
-  }
-  
-  #right {
-    clip-path: polygon(0 0, 100% 50%, 0 100%);
-    height: 80px;
-    width: 60px;
-    margin-top: 50px;
-  }
-
   .collectionNFT{
-    background: url(https://images.unsplash.com/photo-1532512159380-fd23fd42795a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
-    background-size: cover;
+    /* background: url(https://images.unsplash.com/photo-1532512159380-fd23fd42795a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    background-size: cover; */
+    background: linear-gradient(45deg, #848ebf, #d1aa8e);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+   
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+    
 }
 
 .collectionNFT h1{
@@ -182,6 +138,7 @@ a {
 .roadMap{
     background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
     background-size: cover;
+    background-attachment: fixed;
     padding: 80px;
 }
 
@@ -230,7 +187,7 @@ a {
 .faq{
     background: url(https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-size: cover; 
-    /* transition: background-size 0.5s ease-in-out; */
+    background-attachment: fixed;
 }
 
 .questions{
@@ -304,7 +261,8 @@ details > p{
 
 
 .collectionNFT{
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 30px;
 }
 
 .collectionNFT p{
