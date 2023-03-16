@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mint NFT page</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -15,13 +18,13 @@
                     ART NFT
                 </div>
                 <div class="header_item headerButton" >
-                    <a href="#">Mint Now</a>
+                    <a href="#mintNow">Mint Now</a>
                 </div>
                 <div class="header_item headerButton" >
-                    <a href="#">Main</a>
+                    <a href="#main">Main</a>
                 </div>
                 <div class="header_item headerButton" >
-                    <a href="#">Road Map</a>
+                    <a href="#roadmap">Road Map</a>
                 </div>
         </div>
         <div class="header_section">
@@ -41,10 +44,11 @@
     </div>
 
     
-
+    <a id="mintNow"></a>
     <div class="card name" id="main-background">
-        <h1>ART NFT</h1>
-        <p>Our world is changing at an unimaginable speed, 
+        
+        <h1  data-aos="zoom-in">ART NFT</h1>
+        <p  data-aos="zoom-in">Our world is changing at an unimaginable speed, 
             new technologies and the virtual world are becoming
              part of our lives. NFT is changing our 
              understanding of art, expanding the horizons of 
@@ -52,15 +56,18 @@
              support artists and designers who are just 
              starting their creative journey in the world of WEB-3</p>
             <div class="buttom">
-        <button type="submit" class="btn mint"><strong>Mint NFT</strong></button>
-        <button type="submit" class="btn MM"><strong>Connect to MetaMask</strong></button>   
+        <button type="submit" class="btn mint"  data-aos="zoom-in"><strong>Mint NFT</strong></button>
+        <input type="button" class="btn MM" value="Connect to MetaMask" onclick="connect();">
+        <!-- <button id="connectButton" type="submit" class="btn MM"  data-aos="zoom-in"><strong>Connect to MetaMask</strong></button>   -->
+        <p id="status"></p> 
         
     </div>      
     </div>
 
-    <div class="card collectionNFT">
-        <h1>Our Colliction</h1>
-        <p>Here you can see the work of our designers photographers</p>
+    <a id="main"></a>
+    <div class="card collectionNFT" id="collection">
+        <h1 data-aos="zoom-out">Our Colliction</h1>
+        <p data-aos="zoom-out">Here you can see the work of our designers photographers</p>
         <div class="slider">
             <div class="container">
               <div
@@ -137,11 +144,12 @@
         
         
     </div>
-    
+    <a id="roadmap"></a>
 
     <div class="card roadMap">
-        <h1>Road Map</h1>
-        <div class="step one">
+        
+        <h1 data-aos="zoom-out">Road Map</h1>
+        <div class="step one" data-aos="zoom-in-left">
             <h3>Phase 1: Beginning</h3>
             <p><ul>
                 <li>Creating an exclusive ART NFT collection in 3 phases.</li>
@@ -152,7 +160,7 @@
             </ul></p>
         </div>
 
-        <div class="step two">
+        <div class="step two" data-aos="zoom-in-right">
             <h3>Phase 2: Mint</h3>
             <ul>
                 <li>Public Sale of ART NFT</li>
@@ -160,7 +168,7 @@
             
         </div>
 
-        <div class="step three">
+        <div class="step three" data-aos="zoom-in-left">
             <h3>Phase 3: Post Mint</h3>
             <ul>
                 <li>30 lucky winners will each receive 1 ART NFT.
@@ -183,38 +191,43 @@
     
 
     <div class="card faq">
-        <h1>FAQ</h1>
+        <h1 data-aos="zoom-out">FAQ</h1>
         <div class="quesAndVideo">
         <div class="questions">
-        <div class="question">
+        <div class="question" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <details>
                 <summary>What is NFT</summary>
                 <p>NFT, also a unique token, is a type of cryptographic token, each copy of which is unique and cannot be exchanged or replaced by another similar token, like bitcoin or Ethereum.</p>
               </details>
            </div>
 
-       <div class="question">
+       <div class="question" data-aos="fade-up"
+       data-aos-anchor-placement="top-bottom">
         <details>
             <summary>When is the official launch?</summary>
             <p>April 2023. Public Date will be announced later.</p>
           </details>
        </div>
 
-       <div class="question">
+       <div class="question" data-aos="fade-up"
+       data-aos-anchor-placement="top-bottom">
         <details>
             <summary>Which blockchain do we use?</summary>
             <p>ART runs on the Polygon chain. It ensures transactions remain less than $0.01 with most trx per seconds then other chains.</p>
           </details>
        </div>
 
-       <div class="question">
+       <div class="question" data-aos="fade-up"
+       data-aos-anchor-placement="top-bottom">
         <details>
             <summary>How can I buy (MINT) ART NFT?</summary>
             <p>You will be able to purchase/mint ART NFT through our public minting sale, or once the collection is live through our opensea.io collection.</p>
           </details>
        </div>
 
-       <div class="question whitelist">
+       <div class="question whitelist" data-aos="fade-up"
+       data-aos-anchor-placement="top-bottom">
         <details>
             <summary>How do I get Whitelisted?</summary>
             <p>For Wl users prices are really low.
@@ -229,9 +242,19 @@
     </div>
     </div>
 </div>
+
+
+</div>
 </div>
 <script src="three.min.js"></script>
 <script src="vanta.fog.min.js"></script>
 <script src="app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+
 </body>
 </html>
