@@ -32,7 +32,7 @@ function clearActiveClasses() {
 
 
 
-AOS.init();
+// AOS.init();
 AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -62,7 +62,8 @@ async function connect() {
     
      await window.ethereum.request({ method: "eth_requestAccounts" });
      window.web3 = new Web3(window.ethereum);
-     
+     document.getElementById("buttonMM").value = "Mint NFT";
+    
     } else {
      console.log("No wallet");
     }

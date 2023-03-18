@@ -92,14 +92,13 @@ a {
 
 }
 
+
+
 .btn:hover{
     background: #e5cab1;
     cursor: pointer;
 }
 
-.mint{
-    margin-right: 30px;
-}
 
   .collectionNFT{
     /* background: url(https://images.unsplash.com/photo-1532512159380-fd23fd42795a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
@@ -127,19 +126,29 @@ a {
     text-align: center;
     font-size: 50px;
     padding-top: 30px;
+    width: 500px;
+    margin: auto;
+    
 }
 
 .collectionNFT p{
     text-align: center;
     font-size: 20px;
     padding-top: 20px;
-   
+    width: 700px;
+    margin: auto;
 }
 
-.roadMap{
+.roadMap, .faq{
     background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.roadMap{
+    /* background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+    background-size: cover;
+    background-attachment: fixed; */
     padding: 80px;
 }
 
@@ -178,7 +187,13 @@ a {
 .roadMap h1{
     font-size: 50px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+    width: 500px;
+    margin: auto;
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+    
 }
 
 .step:hover{
@@ -186,9 +201,9 @@ a {
     
 }
 .faq{
-    background: url(https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    /* background: url(https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-size: cover; 
-    background-attachment: fixed;
+    background-attachment: fixed; */
     
 }
 
@@ -221,9 +236,11 @@ a {
 details > summary {
     padding: 20px 0px 20px 10px;
 
-    background-color: #a9c1cf;
+    /* background-color: #a9c1cf; */
+    background: linear-gradient(229.99deg, #d6b7a1 -26%, #779cbf 145%);
+    opacity: 0.9;
     border-radius: 10px;
-    opacity: 0.8;
+    
     color: #333;
     cursor: pointer;
 }
@@ -239,12 +256,16 @@ details[open] > summary {
     border-end-end-radius: 0px;
     border-end-start-radius: 0px;
     color:#333; 
-    background-color:#c4c4c4;
+    /* background-color:#c4c4c4; */
+    background: linear-gradient(229.99deg, #d6b7a1 -26%, #779cbf 145%);
+    opacity: 0.9;
 }
 
 details > p{
-    background: #c4c4c4;
-    opacity: 0.8;
+    /* background: #c4c4c4;
+    opacity: 0.8; */
+    background: linear-gradient(229.99deg, #d6b7a1 -26%, #779cbf 145%);
+    opacity: 0.9;
     color: #333;
     padding: 0px 15px 20px 10px;
     border-end-end-radius: 10px;
@@ -258,6 +279,9 @@ details > p{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    width: 700px;
+    margin: auto;
+    border-bottom: 2px solid black;
 }
 
 
@@ -324,9 +348,37 @@ details > p{
         padding: 10px;
         border-radius: 10px;
         font-size: 20px;
-   
+   }
+   .collectionNFT p{
+    width: 300px;
+    font-size: 20px;
+   }
+   .collectionNFT h1{
+    font-size: 40px;
+    width: 300px
+   }
+   .roadMap h1{
+    font-size: 40px;
+    width: 300px;
+   }
+   .step{
+    width: 250px;
+    font-size: 12px;
+    height: auto;
+    margin: 10px;
+   }
+   .faq h1{
+    font-size: 40px;
+    width: 300px;
+   }
+   .quesAndVideo{
+    display: block;
+   }
+   .question{
+    width: 100%;
+   }
 }
 
 
-@import AOS from 'aos';
+/* @import AOS from 'aos'; */
 @import 'aos/dist/aos.css';
