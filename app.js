@@ -1,5 +1,5 @@
 VANTA.FOG({
-    el: "#main-background",
+    //el: "#main-background",
     mouseControls: true,
     touchControls: true,
     gyroControls: false,

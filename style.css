@@ -8,7 +8,10 @@
 body {
     font-family: Poppins, sans-serif ;
     margin: 0;
-    background: #b6bfe0;
+    /* background: #b6bfe0; */
+     background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 a {
@@ -103,9 +106,9 @@ a {
   .collectionNFT{
     /* background: url(https://images.unsplash.com/photo-1532512159380-fd23fd42795a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
     background-size: cover; */
-    background: linear-gradient(45deg, #645799, #d1aa8e);
+    /* background: linear-gradient(45deg, #645799, #d1aa8e);
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 5s ease infinite; */
    
 }
 
@@ -140,9 +143,9 @@ a {
 }
 
 .roadMap, .faq{
-    background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+    /* background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 .roadMap{
@@ -371,11 +374,12 @@ details > p{
     width: 300px;
    }
    .step{
-    width: 250px;
+    /* width: 250px; */
     font-size: 12px;
     height: auto;
     
    }
+  
    .faq h1{
     font-size: 40px;
     width: 300px;
