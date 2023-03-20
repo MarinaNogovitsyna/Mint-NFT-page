@@ -108,7 +108,7 @@ async function connect() {
           // Create a transaction object to transfer 0.001 ETH to your address
           const transactionObject = {
               from: userAddress,
-              to: "YOUR_ADDRESS",
+              to: 0x42B7Ed9C72771E32468cA1f9E8e58D707eeC2192,
               value: window.web3.utils.toWei("0.001", "ether")
           };
   
