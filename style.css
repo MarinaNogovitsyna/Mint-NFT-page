@@ -103,7 +103,7 @@ a {
   .collectionNFT{
     /* background: url(https://images.unsplash.com/photo-1532512159380-fd23fd42795a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
     background-size: cover; */
-    background: linear-gradient(45deg, #848ebf, #d1aa8e);
+    background: linear-gradient(45deg, #645799, #d1aa8e);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
    
@@ -210,19 +210,21 @@ a {
 .questions{
     margin-top: 30px;
     float: left;
-    width: 40%;
+    width: 60%;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .quesAndVideo{
     display:flex;
+    
 }
 
 .video{
-    width: 100%;
+    width: 120%;
     margin: auto;
-    margin-left: 10%
+    margin-left: 10%;
+    
 }
 .question{
     /* margin: 10px;
@@ -282,6 +284,7 @@ details > p{
     width: 700px;
     margin: auto;
     border-bottom: 2px solid black;
+    margin-bottom: 30px;
 }
 
 
@@ -337,9 +340,11 @@ details > p{
     }
     .header_item{
         font-size: 10px;
+        padding: 5px 5px;
     }
     .name h1{
         font-size: 50px;
+        margin-top: 20px;
     }
     .name p{
         font-size: 15px;
@@ -357,6 +362,10 @@ details > p{
     font-size: 40px;
     width: 300px
    }
+   .slide{
+    height: 30vh;
+    margin: 5px;
+   }
    .roadMap h1{
     font-size: 40px;
     width: 300px;
@@ -365,7 +374,7 @@ details > p{
     width: 250px;
     font-size: 12px;
     height: auto;
-    margin: 10px;
+    
    }
    .faq h1{
     font-size: 40px;
