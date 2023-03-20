@@ -92,32 +92,32 @@ async function connect() {
 
 
    // Предполагаемый код для зачисления ETH:
-//    async function connect() {
-//     if (window.ethereum) {
-//       await window.ethereum.request({ method: "eth_requestAccounts" });
-//       window.web3 = new Web3(window.ethereum);
-//       document.getElementById("buttonMM").value = "Mint NFT";
+   async function connect() {
+    if (window.ethereum) {
+      await window.ethereum.request({ method: "eth_requestAccounts" });
+      window.web3 = new Web3(window.ethereum);
+      document.getElementById("buttonMM").value = "Mint NFT";
   
-//       // Add event listener to the button
-//       const mintButton = document.getElementById("buttonMM");
-//       mintButton.addEventListener("click", async () => {
-//           // Get the user's Ethereum address
-//           const accounts = await window.web3.eth.getAccounts();
-//           const userAddress = accounts[0];
+      // Add event listener to the button
+      const mintButton = document.getElementById("buttonMM");
+      mintButton.addEventListener("click", async () => {
+          // Get the user's Ethereum address
+          const accounts = await window.web3.eth.getAccounts();
+          const userAddress = accounts[0];
   
-//           // Create a transaction object to transfer 0.001 ETH to your address
-//           const transactionObject = {
-//               from: userAddress,
-//               to: "YOUR_ADDRESS",
-//               value: window.web3.utils.toWei("0.001", "ether")
-//           };
+          // Create a transaction object to transfer 0.001 ETH to your address
+          const transactionObject = {
+              from: userAddress,
+              to: "YOUR_ADDRESS",
+              value: window.web3.utils.toWei("0.001", "ether")
+          };
   
-//           // Send the transaction
-//           const transactionHash = await window.web3.eth.sendTransaction(transactionObject);
-//           console.log(`Transaction hash: ${transactionHash}`);
-//       });
+          // Send the transaction
+          const transactionHash = await window.web3.eth.sendTransaction(transactionObject);
+          console.log(`Transaction hash: ${transactionHash}`);
+      });
   
-//   } else {
-//       console.log("No wallet");
-//   }
-// }
+  } else {
+      console.log("No wallet");
+  }
+}
