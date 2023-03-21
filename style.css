@@ -343,6 +343,10 @@ details > p{
 }
 
 @media(max-width: 600px){
+    body{
+        background-attachment: fixed;
+    }
+    
     .header{
         height: 7%;
         
@@ -357,18 +361,21 @@ details > p{
     }
     .name p{
         font-size: 15px;
+        padding: 15px;
     }
     .btn{
         padding: 10px;
         border-radius: 10px;
         font-size: 20px;
+        border: 1px solid black;
+        color: #333;
    }
    .collectionNFT p{
     width: 300px;
-    font-size: 20px;
+    font-size: 15px;
    }
    .collectionNFT h1{
-    font-size: 40px;
+    font-size: 30px;
     width: 300px
    }
    .slide{
@@ -376,13 +383,14 @@ details > p{
     margin: 5px;
    }
    .roadMap h1{
-    font-size: 40px;
+    font-size: 30px;
     width: 300px;
    }
    .step{
     /* width: 250px; */
     font-size: 12px;
     height: auto;
+    margin: 10px 0px 10px 0px;
     
    }
   

@@ -116,6 +116,7 @@ AOS.init({
         }
 
     } else {
-        console.log("No wallet");
+      alert("You need to install MetaMask to use this feature. Click ok to download MetaMask");
+      window.open("https://metamask.io/download.html");
     }
 }
