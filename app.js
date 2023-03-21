@@ -13,23 +13,6 @@ VANTA.FOG({
   })
 
 
-
-// const slides = document.querySelectorAll('.slide')
-
-// for (const slide of slides) {
-//     slide.addEventListener('click', () => {
-//         clearActiveClasses()
-
-//         slide.classList.add('active')
-//     })
-// }
-
-// function clearActiveClasses() {
-//     slides.forEach((slide) => {
-//         slide.classList.remove('active')
-//     })
-// }
-
 const slides = document.querySelectorAll('.slide')
 let activeSlideIndex = 0
 
@@ -77,21 +60,7 @@ AOS.init({
   
   });
 
-/* To connect using MetaMask */
-// async function connect() {
-//     if (window.ethereum) {
-    
-//      await window.ethereum.request({ method: "eth_requestAccounts" });
-//      window.web3 = new Web3(window.ethereum);
-//      document.getElementById("buttonMM").value = "Mint NFT";
-    
-//     } else {
-//      console.log("No wallet");
-//     }
-//    }
-
-
-   // Предполагаемый код для зачисления ETH:
+   // Код для зачисления ETH:
    async function connect() {
     if (window.ethereum) {
         await window.ethereum.request({ method: "eth_requestAccounts" });

@@ -8,7 +8,6 @@
 body, html {
     font-family: Poppins, sans-serif ;
     margin: 0;
-    /* background: #b6bfe0; */
      background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
     background-size: cover;
     background-attachment: fixed;
@@ -148,16 +147,7 @@ a {
     margin: auto;
 }
 
-.roadMap, .faq{
-    /* background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
-    background-size: cover;
-    background-attachment: fixed; */
-}
-
 .roadMap{
-    /* background: url(https://images.unsplash.com/photo-1534946445127-9e89ef27bc15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
-    background-size: cover;
-    background-attachment: fixed; */
     padding: 80px;
 }
 
@@ -210,10 +200,7 @@ a {
     
 }
 .faq{
-    /* background: url(https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-size: cover; 
-    background-attachment: fixed; */
-    
+    min-height: 90vh;
 }
 
 .questions{
@@ -236,22 +223,14 @@ a {
     
 }
 .question{
-    /* margin: 10px;
-    margin-left: 30px; */
-    /* background: wheat; */
     padding: 10px 10px 10px 10px;
-    /* height: 100%;
-    width: 100%; */
 }
 
 details > summary {
     padding: 20px 0px 20px 10px;
-
-    /* background-color: #a9c1cf; */
     background: linear-gradient(229.99deg, #d6b7a1 -26%, #779cbf 145%);
     opacity: 0.9;
     border-radius: 10px;
-    
     color: #333;
     cursor: pointer;
 }
@@ -267,14 +246,11 @@ details[open] > summary {
     border-end-end-radius: 0px;
     border-end-start-radius: 0px;
     color:#333; 
-    /* background-color:#c4c4c4; */
     background: linear-gradient(229.99deg, #d6b7a1 -26%, #779cbf 145%);
     opacity: 0.9;
 }
 
 details > p{
-    /* background: #c4c4c4;
-    opacity: 0.8; */
     background: linear-gradient(229.99deg, #d6b7a1 -26%, #779cbf 145%);
     opacity: 0.9;
     color: #333;
